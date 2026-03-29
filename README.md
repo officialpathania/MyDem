@@ -147,6 +147,5 @@ adb install -r android/app/build/outputs/apk/release/app-release.apk
 
 `android/keystore.properties` and `*.keystore` (except debug) are **gitignored**. Use `android/keystore.properties.example` as a template. Full steps: **`android/RELEASE_APK.md`**.
 
-For a **public** GitHub repo, do not paste real passwords in README or issues.
 
 
