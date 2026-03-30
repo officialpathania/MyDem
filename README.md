@@ -2,8 +2,6 @@
 
 React Native (TypeScript) app with a **custom native module** on Android (Kotlin) and iOS (Swift). It reads battery + device info once on demand and **streams accelerometer + battery updates** over events. State is handled with **Redux Toolkit**.
 
-**Push this project to GitHub:** step-by-step guide in [`docs/GITHUB_SETUP.md`](docs/GITHUB_SETUP.md).
-
 ## Prerequisites
 
 | Tool | Notes |
@@ -135,17 +133,7 @@ Install on a device with USB debugging:
 adb install -r android/app/build/outputs/apk/release/app-release.apk
 ```
 
-### Release keystore
 
-| Item | Value |
-|------|--------|
-| Keystore file (local only) | `android/keystore/mydem-release.keystore` |
-| Format | PKCS12 |
-| Key alias | `mydem-release` (example; yours may differ) |
-| Passwords | Set in `android/keystore.properties` — **never commit** that file |
-| Gradle config | `android/keystore.properties` (paths relative to `android/`) |
-
-`android/keystore.properties` and `*.keystore` (except debug) are **gitignored**. Use `android/keystore.properties.example` as a template. Full steps: **`android/RELEASE_APK.md`**.
 
 
 
